@@ -1,0 +1,9 @@
+version: "1.0.0"
+services:
+  nodejs-template:
+    image: gavfu/nodejs-template
+    container_name: nodejs-template
+    ports:
+      - 23000:3000
+    working_dir: /app
+    env_file: ./.env
